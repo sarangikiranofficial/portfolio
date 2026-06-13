@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <!-- Google Fonts for premium clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&bull;</span> Sarangi Kiran
+            </a>
+            <nav class="navbar">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+     
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span> Engineering Student
+                </div>
+                <h1 class="hero-title">
+                    Hello, I'm <span class="pastel-highlight">Sarangi Kiran</span>
+                </h1>
+                <p class="hero-subtitle">
+                    I am a first year computer science engineering student at Christ College of Engineering, Irinjalakuda, passionate about front-end web development, creating intuitive user interfaces, and solving technical problems.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Abilities</span>
+                    <h2 class="section-title">Skills & Knowledge</h2>
+                    <p class="section-description">
+                        A summary of the technical platforms and soft skills I am developing during my engineering studies.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Technical Skills Card -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-laptop-code skill-icon icon-code"></i>
+                            <h3>Technical Skills</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-info">
+                                    <span class="skill-name">Basic Python</span>
+                                    <span class="skill-level">Beginner / Intermediate</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 65%; background-color: var(--pastel-sage);"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span class="skill-name">Basic C Programming</span>
+                                    <span class="skill-level">Beginner</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 50%; background-color: var(--pastel-terracotta);"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span class="skill-name">Front-End Development</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 80%; background-color: var(--pastel-blue);"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Soft Skills Card -->
+                    <div class="skills-card">
+                        <div class="skills-card-header">
+                            <i class="fa-solid fa-users-gear skill-icon icon-soft"></i>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-info">
+                                    <span class="skill-name">Communication</span>
+                                    <span class="skill-level">Fluent & Empathetic</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 85%; background-color: var(--pastel-sage);"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span class="skill-name">Problem Solving</span>
+                                    <span class="skill-level">Analytical & Logic-driven</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 75%; background-color: var(--pastel-terracotta);"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span class="skill-name">Teamwork</span>
+                                    <span class="skill-level">Collaborative & Supportive</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress" style="width: 90%; background-color: var(--pastel-blue);"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filterable Project Gallery Section -->
+        <section id="projects" class="section-padding bg-pastel-offset">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">My Creations</span>
+                    <h2 class="section-title">Projects Gallery</h2>
+                    <p class="section-description">
+                        A selection of basic coursework, hobby templates, and coding tools built as a student.
+                    </p>
+                </div>
+
+                <!-- Gallery Controls -->
+                <div class="gallery-controls">
+                    <!-- Dynamic Project Counter -->
+                    <div class="gallery-counter">
+                        <span id="project-count-text">Showing <strong class="highlight-count" id="visible-count">6</strong> projects</span>
+                    </div>
+
+                    <!-- Filter Buttons -->
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="design">Design</button>
+                        <button class="filter-btn" data-filter="web">Web</button>
+                        <button class="filter-btn" data-filter="code">Code</button>
+                    </div>
+                </div>
+
+                <!-- Projects Grid Container -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project Card 1 (Web) -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-card-image">
+                            <span class="project-category-badge category-web">Web</span>
+                            <i class="fa-solid fa-address-card project-icon icon-web"></i>
+                        </div>
+                        <div class="project-card-info">
+                            <h3 class="project-card-title">Personal Portfolio Site</h3>
+                            <p class="project-card-description">
+                                A simple, responsive profile page built using semantic HTML, pure CSS layout tags, and vanilla JavaScript functions.
+                            </p>
+                            <div class="project-card-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 (Code) -->
+                    <div class="project-card" data-category="code">
+                        <div class="project-card-image">
+                            <span class="project-category-badge category-code">Code</span>
+                            <i class="fa-solid fa-calculator project-icon icon-code"></i>
+                        </div>
+                        <div class="project-card-info">
+                            <h3 class="project-card-title">Simple Calculator CLI</h3>
+                            <p class="project-card-description">
+                                A terminal application written in Python supporting basic arithmetic, expression parsing, and error-handling routines.
+                            </p>
+                            <div class="project-card-tech">
+                                <span>Python 3</span>
+                                <span>CLI Tools</span>
+                                <span>Algorithms</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 (Design) -->
+                    <div class="project-card" data-category="design">
+                        <div class="project-card-image">
+                            <span class="project-category-badge category-design">Design</span>
+                            <i class="fa-solid fa-mug-hot project-icon icon-design"></i>
+                        </div>
+                        <div class="project-card-info">
+                            <h3 class="project-card-title">Coffee Shop Landing Page</h3>
+                            <p class="project-card-description">
+                                Visual wireframes and UI designs created in Figma focusing on warm color contrasts, grid symmetry, and clean typography.
+                            </p>
+                            <div class="project-card-tech">
+                                <span>Figma</span>
+                                <span>UI/UX</span>
+                                <span>Wireframes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 (Code) -->
+                    <div class="project-card" data-category="code">
+                        <div class="project-card-image">
+                            <span class="project-category-badge category-code">Code</span>
+                            <i class="fa-solid fa-graduation-cap project-icon icon-code"></i>
+                        </div>
+                        <div class="project-card-info">
+                            <h3 class="project-card-title">Student Grade Analyzer</h3>
+                            <p class="project-card-description">
+                                A console utility written in C language to calculate mean grades, sorting records alphabetically, and writing reports to file storage.
+                            </p>
+                            <div class="project-card-tech">
+                                <span>C Programming</span>
+                                <span>File I/O</span>
+                                <span>Data Structures</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 5 (Web) -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-card-image">
+                            <span class="project-category-badge category-web">Web</span>
+                            <i class="fa-solid fa-book-bookmark project-icon icon-web"></i>
+                        </div>
+                        <div class="project-card-info">
+                            <h3 class="project-card-title">Local Library Directory</h3>
+                            <p class="project-card-description">
+                                A simple library database interface that stores catalog information locally in the browser storage to list, search, and delete records.
+                            </p>
+                            <div class="project-card-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>LocalStorage</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 6 (Design) -->
+                    <div class="project-card" data-category="design">
+                        <div class="project-card-image">
+                            <span class="project-category-badge category-design">Design</span>
+                            <i class="fa-solid fa-icons project-icon icon-design"></i>
+                        </div>
+                        <div class="project-card-info">
+                            <h3 class="project-card-title">Minimalist Icon Set</h3>
+                            <p class="project-card-description">
+                                A vector-based asset collection of common system actions and tools drawn natively on a responsive pixel grid structure.
+                            </p>
+                            <div class="project-card-tech">
+                                <span>Illustrator</span>
+                                <span>SVG Shapes</span>
+                                <span>Asset Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="project-card" data-category="design">
+                        <div class="project-card-embed">
+                           <span class="project-category-badge category-design">Design</span>
+        
+                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.05);" width="100%" height="300" src="https://embed.figma.com/design/dtlJx2iwqepx9yAlRFLzCK/Tide-Task-Manager?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+                        </div>
+    
+                       <div class="project-card-info">
+                         <h3 class="project-card-title">Session 1 Figma Prototype</h3>
+                        <p class="project-card-description">
+                              A prototype built during Session 1. 
+                         </p>
+                         <div class="project-card-tech">
+                           <span>Figma</span>
+                           <span>UI/UX</span>
+                           <span>Interactive Prototype</span>
+                         </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+ 
+         <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">GitHub Projects</h2>
+                </div>
+
+        <div class="projects-grid" id="github-projects-grid">
+        </div>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Blog</h2>
+                </div>
+
+
+
+        
+                <!-- Blog Grid (CSS Grid Container with exactly 3 posts) -->
+                <div class="blog-grid">
+                    <!-- Blog Card 1 -->
+                    <article class="blog-card">
+                        <div class="blog-card-header">
+                            <span class="blog-tag text-blue">Web Dev</span>
+                            <span class="blog-date">June 2026</span>
+                        </div>
+                        <h3 class="blog-card-title">Introduction to Modern Web Development</h3>
+                        <p class="blog-card-excerpt">
+                            Web development refers to the tasks associated with creating, building, and maintaining websites and web applications. It involves foundational technologies like HTML for markup structure, CSS for layout styling, and JavaScript for client-side interactivity.
+                        </p>
+                        <a href="javascript:void(0);" class="blog-read-more">
+                            Read More <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </article>
+
+                    <!-- Blog Card 2 -->
+                    <article class="blog-card">
+                        <div class="blog-card-header">
+                            <span class="blog-tag text-terracotta">Designing</span>
+                            <span class="blog-date">June 2026</span>
+                        </div>
+                        <h3 class="blog-card-title">The Fundamentals of UI/UX Interface Design</h3>
+                        <p class="blog-card-excerpt">
+                            Designing interfaces is about craft, balance, and human-computer usability. Clean designs prioritize accessible contrast ratios, visual hierarchy, consistent spacing, and intuitive user experiences that guide visitors naturally across sections.
+                        </p>
+                        <a href="javascript:void(0);" class="blog-read-more">
+                            Read More <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </article>
+
+                    <!-- Blog Card 3 -->
+                    <article class="blog-card">
+                        <div class="blog-card-header">
+                            <span class="blog-tag text-sage">Engineering</span>
+                            <span class="blog-date">June 2026</span>
+                        </div>
+                        <h3 class="blog-card-title">Core Principles of Software Engineering Practice</h3>
+                        <p class="blog-card-excerpt">
+                            Software engineering is a systematic engineering approach to software development. It applies design, development, maintenance, testing, and evaluation principles to construct robust, scalable, and highly efficient program systems.
+                        </p>
+                        <a href="javascript:void(0);" class="blog-read-more">
+                            Read More <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Me Section (No Forms) -->
+    <footer id="contact" class="contact-section">
+        <div class="container contact-container">
+            <div class="section-header contact-header">
+                <span class="section-tagline">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-description">
+                    Feel free to reach out via email or connect with me on LinkedIn. I am always open to discussing new opportunities or coding projects!
+                </p>
+            </div>
+            
+            <div class="contact-links-grid">
+                <a href="mailto:your.email@example.com" class="contact-link-card">
+                    <div class="contact-icon-box box-sage">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-info-box">
+                        <span class="contact-label">Email Me</span>
+                        <span class="contact-value">sarangikiranp@gmail.com</span>
+                    </div>
+                </a>
+
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                    <div class="contact-icon-box box-blue">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <div class="contact-info-box">
+                        <span class="contact-label">LinkedIn Profile</span>
+                        <span class="contact-value">www.linkedin.com/in/sarangi-kiran</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026  Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to external script -->
+    <script src="script.js"></script>
+</body>
+</html>
